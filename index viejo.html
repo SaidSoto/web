@@ -1,0 +1,282 @@
+<!--
+Introducción a HTML5 y CSS3
+Demian Said Soto Tapia
+Grupo B-L1
+10/02/2025
+-->
+
+<!DOCTYPE html>
+<html lang="es"><!--Esto indica que la página es en español-->
+    <head>
+        <meta charset="UTF-8"> <!--Esto es un comentario, agregar palabras con acentos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bitácora</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="img/LOG1.ico" rel="icon">
+    </head>
+    <body>
+        <header>
+            <h1 class="tit">¡BITÁCORA DE DEMIAN!</h1>
+        </header>
+
+        <div class="nav"><!--Menú pegado-->
+            <a href="#dom">DOM/LANG</a>
+            <a href="#hed">HEADERS</a>
+            <a href="#txt">TEXTO</a>
+            <a href="#lil">LISTAS</a>
+            <a href="#imgg">IMAGENES</a>
+            <a href="#mult">INSERTAR</a>
+            <a href="#diag">DIAGRAMA</a>
+            <a href="parallax.html">PARALLAX</a>
+        </div>
+
+        <div id="dom"></div>
+        <div class="titu">
+            <h1>DOM/LANG</h1>
+        </div>
+        <div class="con">
+            <p>El (lang="es") dentro de la etiqueta de html nos indicará el idioma de nuestra página, en este caso es = español</p>
+        <p>DOM: Es la estructura de nuestra página web, la cual nos indicará de manera de nodos que partes pertenecen a que partes de la página, resaltando de una manera más fácil la jerarquía de las etiquetas</p>
+        </div>
+
+        <div id="hed"></div>
+        <div class="titu">
+            <h1>HEADERS</h1>
+        </div>
+        <div class="head">
+            <h1>Esto es un encabezado (h1)</h1>
+            <h2>Esto es un encabezado (h2)</h2>
+            <h3>Esto es un encabezado (h3)</h3>
+            <h4>Esto es un encabezado (h4)</h4>
+            <h5>Esto es un encabezado (h5)</h5>
+            <h6>Esto es un encabezado (h6)</h6>
+        </div>
+
+        <div id="txt"></div>
+        <div class="titu">
+            <h1>TEXTO</h1>
+        </div>
+        <div class="pp">
+            <p>Esto es un parrafo (p)</p>
+        <p style="color: rgb(102, 0, 153);">Para poner color al texto usamos (style="color: color deseado;") dentro de la etiqueta</p>
+        </div>
+
+        <div id="lil"></div>
+        <div class="titu">
+            <h1>LISTAS</h1>
+        </div>
+        <div class="list">
+        <ul>
+            <li>Esto se encuentra dentro de una lista (ul)</li>
+            <li>Estos es un elemento de lista (li)</li>
+        </ul>
+        <ol>
+            <li>Esto se encuentra dentro de una lista ordenada (ol)</li>
+            <li>Estos son elementos de lista (li)</li>
+        </ol>
+        <ol start="10">
+            <li>Esto se encunetra dentro de una lista ordenada (ol)</li>
+            <li>Para elegir el número inicial usamos (start="número deseado") dentro de la etiqueta</li>
+            <li>Estos son elementos de lista (li)</li>
+        </ol>
+        </div>
+
+        <div id="imgg"></div>
+        <div class="titu">
+            <h1>IMAGENES</h1>
+        </div>
+        <div class="ima">
+            <p>Esto es una imágen insertada desde la web, usando (img src="Link de la imagen de internet")</p>
+            <img src="https://us.123rf.com/450wm/robuart/robuart1607/robuart160700191/59597865-polaroid-imagen-de-la-foto-del-viaje-playa-vacaciones-de-verano-el-mar-y-el-sol-ilustraci%C3%B3n.jpg?ver=6">
+            <p>Insertar imágen descargada:</p>
+            <img src="img/Explain.jpg" class="cen">
+        </div>
+
+        <div id="mult"></div>
+        <div class="titu">
+            <h1>INSERTAR</h1>
+        </div>
+        <div class="mul">
+            <a href="https://kfc.com.mx/">Esto es un enlace (a) y para elegir el link usamos (href="Link de la página") dentro de la etiqueta</a>
+            <p>Para insertar algún video, documento o algun medio interactivo, usamos (iframe), copiandolo directamente desde el material original</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.672159242345!2d-106.39177364295897!3d31.697529181432923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d02b20e7765%3A0x47b078967088cfa0!2sTaquer%C3%ADa%20Aaajiji!5e0!3m2!1ses-419!2smx!4v1738964145356!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div class="mul">
+
+        <div id="diag"></div>
+        <div class="titu">
+            <h1>DIAGRAMA</h1>
+        </div>
+        <div class="dia">
+            <img src="img/Dia.png">
+        </div>
+
+        <!--<div class="cuadrado">
+            <p class="textcol">Lorem ipsum odor amet, consectetuer adipiscing elit. Integer erat vestibulum netus vehicula orci aptent nibh eu. Tempus augue at velit, vehicula fames vestibulum scelerisque. Amet feugiat eget vitae curabitur viverra sed. Primis augue iaculis augue ornare ligula. Hac bibendum velit class lorem eget tellus. Vulputate posuere montes facilisis aenean inceptos. Sociosqu est purus curae eget neque integer vulputate.
+
+                <br><br><br>Torquent tristique felis; auctor interdum elit arcu? Porttitor auctor conubia elit nam velit netus sit. Fermentum ac feugiat semper sed dapibus senectus varius. Nibh hac montes purus nullam imperdiet. Vel magnis cubilia aptent tellus elementum integer. Dignissim leo ante habitant vulputate at auctor. Purus luctus suspendisse congue; suscipit non purus ad vivamus. Lobortis dictum posuere, mauris iaculis quisque malesuada venenatis. Augue aptent at in; eros netus pulvinar malesuada.</p>
+        </div>
+        <ul>
+            <li>Hola</li>
+            <li>Super hola</li>
+            <li>Hiiper hola</li>
+        </ul>
+
+        <div class="imgf"></div>-->
+
+        <div class="u">
+            <img src="img/LOG.png">
+        </div>
+
+        <!--<div class="d"></div>
+        <div class="t">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>
+        </div>-->
+
+        <!--TABLA
+        <div class="titu">
+            <h1>TABLA</h1>
+        </div>
+        <div class="tab">
+            <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>30</td>
+                    <td>Buenos Aires</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>24</td>
+                    <td>Lima</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        -->
+
+        <div class="titu">
+            <h1>SITIO</h1>
+        </div>
+        <div class="site">
+            <p>En la etiqueta (a href="") colocaremos el nombre de el otro archivo de HTML a redireccionar.</p>
+            <a href="index org.html">Click aquí para ver la página original!</a>
+        </div>
+        
+        <div class="titu">
+            <h1>BOTÓN Y HOVER</h1>
+        </div>
+        <div class="bot">
+            <p>Creando un botón con la etiqueta (button) y usando hover en el style, podemos hacer que este cambie de color cuando pasamos el puntero por encima.</p>
+            <button class="btn">Mouse aquí!</button>
+        </div>
+
+        <div class="titu">
+            <h1>SPAN</h1>
+        </div>
+        <div class="span">
+            <p>La etiqueta (span) podremos utilizarlo como un div, solo que este se acomodará de manera horizontal, sin salto de linea. También se puede lograr esto con los (div) al usar el atributo (display: inline-block).</p>
+            <span>UNO</span>
+            <span>DOS</span>
+            <span>TRES</span>
+
+        </div>
+
+        <!--PRESENTACIÓN-->
+        <div class="titu">
+            <h1>GALERÍA</h1>
+        </div>
+        <div class="slide">
+        <div id="slideshow">
+            <div class="slide-wrapper">
+                <div class="slide">
+                    <h1 class="slide-number">1</h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">2</h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">3</h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">4</h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">5</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--FORMULARIO
+        <form action="/actionPage.php"><!--Ejemplo php
+            <label>Nombres:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre...">
+            <label>Pais:</label>
+            <select id="pais" name="pais">
+                <option value="australia">Australia</option>
+                <option value="mexico">Mexico</option>
+                <option value="usa">Estados Unidos</option>
+            </select>
+        </form>
+
+        <div class="anim">
+            <h1>ANIMACIÓN</h1>
+        </div>
+        -->
+
+          <!--SELECTORES DE ATRIBUTO-->
+          <ul>
+            <li><a href="#internal">Enlace interno</a></li>
+            <li><a href="http://example.com">Enlace de ejemplo</a></li>
+            <li><a href="#InSensitive">Enlace interno insensible Insensitive</a></li>
+            <li><a href="http://example.org">Ejemplo de enlace .org</a></li>
+          </ul>
+          
+
+<!-- Contenedor -->
+<div class="ej">
+    <!-- Párrafos dentro de un div -->
+    <p>Hola soy un párrafo</p>
+    <p>Hola soy otro párrafo</p>
+    <span>
+      <!-- Párrafo dentro de un span y un div-->
+      <p>Hola soy un párrafo más profundo</p>
+    </span>
+  </div>
+  <!-- Párrafos fuera del div -->
+  <p>Hola soy un párrafo fuera del div</p>
+  <p>Hola soy otro párrafo fuera del div</p>
+
+  <div class="colores">
+    <div class="hex">Color en Hexadecimal</div>
+    <div class="keyword">Color con Palabra Clave</div>
+    <div class="rgb">Color en RGB</div>
+    <div class="rgba">Color en RGBA (con transparencia)</div>
+    <div class="hsl">Color en HSL</div>
+    <div class="hsla">Color en HSLA (con transparencia)</div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+
+        <footer>
+            <h1 class="logo">Gracias por ver!</h1>
+        </footer>
+    </body>
+
+</html>
