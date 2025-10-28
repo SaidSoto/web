@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax | Said Soto</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    
+    <link href="img/THE GIYGAS.ico" rel="icon">
+<style>
+    /*body{
+        background-color: #CBCBCB;
+    }*/
+    img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+#parallax-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+/*Fondo*/
+#layer1 {
+            position: absolute;
+            z-index: 1;
+            background-image: url("img/FONDO.png");
+            top: 100;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+/*Capa con  imagen*/
+#layer2 {
+            position: absolute;
+            z-index: 3; /*Cambiar la profundidad de cada imagen*/
+            top: 300px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+#layer3 {
+            position: absolute;
+            z-index: 4; /*Cambiar la profundidad de cada imagen*/
+            top: 300px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+ 
+.contenido {
+            padding: 50px 20px;
+            background-color: #CBCBCB;
+            text-align: center;
+            min-height: 500px;
+        }
+</style>
+</head>
+<body>
+    <div id="parallax-container">
+ 
+        <div id="layer1"></div>
+ 
+        <div id="layer2">
+            <img src="img/THE BABY.png">
+        </div>
+
+        <div id="layer3">
+            <img src="img/POLVO.png">
+        </div>
+ 
+    </div>
+ 
+ <section class="contenido">
+        <h2>Texto</h2>
+        <p>Parrafo</p>
+        <div style="height: 500px;"></div>
+        <p>Fin de la página.</p>
+    </section>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+            const layer1 = document.getElementById('layer1');
+            const layer2 = document.getElementById('layer2');
+            const layer3 = document.getElementById('layer3');
+            const container = document.getElementById('parallax-container');
+            const speed1 = 0.4; // El fondo se mueve más rápido
+            const speed3 = 0.1; // El frente se mueve más lento
+ 
+            function updateParallax() {
+                const scrollOffset = container.getBoundingClientRect().top;
+                layer1.style.transform = `translate3d(0, ${scrollOffset * speed1}px, 0)`;
+ 
+                // La capa media (Layer 2) se desplaza menos
+                layer2.style.transform = `translate3d(0, ${scrollOffset * speed2}px, 0)`;
+
+                layer3.style.transform = `translate3d(0, ${scrollOffset * speed1}px, 0)`;
+            }
+ 
+            window.addEventListener('scroll', updateParallax);
+ 
+            updateParallax();
+        });
+</script>
+</html>

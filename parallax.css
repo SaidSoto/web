@@ -1,0 +1,39 @@
+img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+#parallax-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+/*Fondo*/
+#layer1 {
+            position: absolute;
+            z-index: 1;
+            background-image: url('fondo.png');
+            top: 100;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+/*Capa con  imagen*/
+#layer2 {
+            position: absolute;
+            z-index: 3; /*Cambiar la profundidad de cada imagen*/
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+ 
+.contenido {
+            padding: 50px 20px;
+            background-color: #0b4d67;
+            text-align: center;
+            min-height: 500px;
+        }
