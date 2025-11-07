@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax | Said Soto</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    
     <link href="img/THE GIYGAS.ico" rel="icon">
 <style>
-    /*body{
+    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+    body{
         background-color: #CBCBCB;
-    }*/
+        color: rgb(155, 0, 194);
+        
+    }
     img {
             display: block;
             margin-left: auto;
@@ -38,7 +41,7 @@
 #layer2 {
             position: absolute;
             z-index: 3; /*Cambiar la profundidad de cada imagen*/
-            top: 300px;
+            top: 200px;
             left: 0;
             width: 100%;
             height: 100%;
@@ -47,17 +50,19 @@
 #layer3 {
             position: absolute;
             z-index: 4; /*Cambiar la profundidad de cada imagen*/
-            top: 300px;
+            top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
- 
 .contenido {
             padding: 50px 20px;
-            background-color: #CBCBCB;
+            /*background-color: #CBCBCB;*/
             text-align: center;
             min-height: 500px;
+            font-family: "Zain", sans-serif;
+            font-size: 25px;
+            
         }
 </style>
 </head>
@@ -69,16 +74,25 @@
         <div id="layer2">
             <img src="img/THE BABY.png">
         </div>
-
+<!--
         <div id="layer3">
-            <img src="img/POLVO.png">
+            <img src="img/clouds.png">
         </div>
- 
+-->
     </div>
  
  <section class="contenido">
-        <h2>Texto</h2>
-        <p>Parrafo</p>
+        <h1>HUNGER</h1>
+        <p>Una pequeña historia que nos muestra a ente de cuerpo 
+pequeño y larga cabellera, acompañada de un pequeño ser que parece ser 
+animal.<br> Estos vuelan por el cosmos juntos, explorando su vasto espacio, 
+buscando una estrella con la que el pequeño ser se alimente, pero este rechaza 
+las que le son ofrecidas por varias ocasiones,<br> los que los hace recorrer aún más el 
+vasto universo, pasando por paisajes llenos de estrellas y planetas, incluso ruinas 
+en el espacio.<br>
+Para al final, encontraran una estrella que brilla más que las demás y que al 
+consumirla, crecer a su verdadera forma, una bestia enrome, con hambre de
+consumir más del cosmos.</p>
         <div style="height: 500px;"></div>
         <p>Fin de la página.</p>
     </section>
@@ -91,15 +105,16 @@
             const container = document.getElementById('parallax-container');
             const speed1 = 0.4; // El fondo se mueve más rápido
             const speed3 = 0.1; // El frente se mueve más lento
+            const speed4 = 0.6; // El frente se mueve más lento
  
             function updateParallax() {
                 const scrollOffset = container.getBoundingClientRect().top;
                 layer1.style.transform = `translate3d(0, ${scrollOffset * speed1}px, 0)`;
  
                 // La capa media (Layer 2) se desplaza menos
-                layer2.style.transform = `translate3d(0, ${scrollOffset * speed2}px, 0)`;
+                layer2.style.transform = `translate3d(0, ${scrollOffset * speed3}px, 0)`;
 
-                layer3.style.transform = `translate3d(0, ${scrollOffset * speed1}px, 0)`;
+                layer3.style.transform = `translate3d(0, ${scrollOffset * speed4}px, 0)`;
             }
  
             window.addEventListener('scroll', updateParallax);

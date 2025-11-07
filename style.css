@@ -61,6 +61,26 @@ header a {
     box-sizing: border-box;
 }
 
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    background-color: #8428b6;
+}
+
+.elem{
+    padding: 15;
+    margin: 10px;
+}
+
+.elem img{
+    height: 100%;
+     width: 15vw;
+}
+
 .contenedor:before, .media:before, .aanim:before {
     content: "";
     position: absolute;
@@ -179,7 +199,7 @@ header a {
     header a { font-size: 18px; margin-right: 30px; }
     .nombre { font-size: 50px; }
     .titu { font-size: 28px; margin-bottom: 25px; }
-    .contenedor, .media, .aanim { width: 75%; padding: 25px; margin: 20px auto; }
+    .contenedor, .media, .aanim, .flex { width: 75%; padding: 25px; margin: 20px auto; }
     .ejemplo1 { width: 100px; height: 100px; }
     .ter { width: 90%; max-width: 600px; }
 }
@@ -188,7 +208,7 @@ header a {
 @media (min-width: 1024px) {
     header { font-size: 60px; }
     header a { font-size: 20px; margin-right: 70px; }
-    .nombre { font-size: 60px; }
+    .nombre { font-size: 50px; }
     .titu { font-size: 35px; margin-bottom: 30px; }
     .contenedor, .media, .aanim { width: 60%; padding: 30px; margin: 30px auto; box-shadow: 0px 0px 20px 16px rgba(53,5,158,0.76); }
     .ejemplo1 { width: 100px; height: 100px; }
