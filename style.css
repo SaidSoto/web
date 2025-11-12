@@ -3,6 +3,58 @@
 body, h1, h2, h3, h4, h5, h6, p, a, button {
     font-family: "Zain", sans-serif;
 }
+
+.cookiebg{
+    position: absolute;
+    z-index: 5;
+    left: 10px;
+    bottom: 10px;
+    width: 400px;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font: 0.9em;
+    line-height: 1.5;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: translateX(-500px);
+}
+.hd{
+    display: flex;
+    align-items: center;
+}
+.hd img{
+    width: 60px;
+}
+.hd span{
+    font-size: 2em;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #8428b6;
+}
+.cookiebg a{
+    color: #8428b6;
+    text-decoration: none;
+}
+.cookiebg button{
+    padding: 13px 0;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #8428b6;
+    border-radius: 3px;
+    color:#8428b6;
+}
+.cookiebg button.f1{
+    border: none;
+    background: #8428b6;
+    color: white;
+}
+.cookiebg.appear{
+    transform: translateX(0);
+}
+
 body {
     background-image: url(https://preview.redd.it/rvglvepmwk561.gif?format=png8&s=d7e85e6b34af6139f14c9cf8dda8f6e7ff899a6f);
     background-repeat: no-repeat;
