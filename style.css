@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button {
 }
 
 .cookiebg{
-    position: absolute;
+    position: fixed;
     z-index: 5;
     left: 10px;
     bottom: 10px;
